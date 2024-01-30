@@ -99,3 +99,26 @@
     max-width: calc(100% - 2em);
   }
 }
+@media (max-width: 45em) {
+  .books ul {
+    justify-content: unset;
+    flex-direction: unset;
+    align-items: unset;
+  }
+  .books ul li {
+    display: block;
+    max-width: calc(100% - 2em);
+  }
+  .books ul li img {
+    position: unset;
+    height: 20em;
+    display: block;
+    margin: 0 auto;
+  }
+  .books ul li .bookRightColumn {
+    display: block;
+    margin: 0 auto;
+    width: 30em;
+    max-width: 100%;
+  }
+}
