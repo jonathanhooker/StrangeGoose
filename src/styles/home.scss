@@ -1,0 +1,74 @@
+
+.books {
+    width: 85em;
+    max-width: 100%;
+    margin: 0 auto;
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            width: 40em;
+            min-height: 20em;
+            margin-bottom: 2.5em;
+            position: relative;
+
+            img {
+                position: absolute;
+                top:0px;
+                left:0px;
+                height: 20em;
+            }
+
+            .bookRightColumn {
+                display: inline-block;
+                margin-left: 14em;
+
+                .title {
+                    font-size: 1.2em;
+                    margin-top: 0.5em;
+                    margin-bottom: 0.25em;
+                }
+                .author {
+                    font-size: 1em;
+                    margin-bottom: 1em;
+                }
+                .description {
+                    margin-bottom: 1em;
+                }
+                .storeLink {
+                    display: inline-block;
+                    background-color: black;
+                    padding: 0.5em 1em;
+                    margin: 0.5em 0.5em 0.5em 0em;
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    
+                    @media (hover: hover) {
+                        &:hover {
+                            background-color: blue;
+                            // color: blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 85em) {
+        ul {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+            li {
+                max-width: calc(100% - 2em)
+            }
+        }
+    }
+}
