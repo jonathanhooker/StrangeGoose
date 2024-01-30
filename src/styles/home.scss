@@ -71,4 +71,31 @@
             }
         }
     }
+    @media (max-width: 45em) {
+        ul {
+            justify-content: unset;
+            flex-direction: unset;
+            align-items: unset;
+            
+
+            li {
+                display: block;
+                max-width: calc(100% - 2em);
+
+                img {
+                    position: unset;
+                    height: 20em;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                .bookRightColumn {
+                    display: block;
+                    margin: 0 auto;
+                    width: 30em;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
