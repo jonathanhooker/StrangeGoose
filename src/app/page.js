@@ -1,19 +1,21 @@
 import Head from 'next/head'
 import Header from '@components/Header'
+import Menu from '@components/Menu'
 import Footer from '@components/Footer'
-import content from '../json/content'
+import content from '@json/content'
 import '@styles/home.scss'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>STRANGE GOOSE</title>
+        <title>STRANGE GOOSER</title>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://use.typekit.net/mrm3nhj.css" />
+        {/* <link rel="stylesheet" href="https://use.typekit.net/mrm3nhj.css" /> */}
       </Head>
 
       <main>
+        <Menu />
         <Header />
         <div className="section books">
           <div className="sectionTitle">OUR BOOKS</div>

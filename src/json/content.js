@@ -6,6 +6,7 @@ export default {
     },
     "books": [
         {   
+            slug:"SlacksvillesWorstSuperHeroes",
             title:"Slacksville's Worst Superheroes",
             author:"K. Peach",
             img:"SlacksvillesWorstSuperHeroes_cover.jpg",
@@ -33,6 +34,7 @@ export default {
             }
         },
         {   
+            slug:"SlacksvillesSilliestSpookyStories",
             title:"Slacksville's Silliest Spooky Stories",
             author:"K. Peach",
             img:"SlacksvillesSilliestSpookyStories_cover.jpg",
@@ -49,6 +51,7 @@ export default {
              }
         },
         {   
+            slug:"WelcomeToSlacksville",
             title:"Welcome To Slacksville",
             author:"K. Peach",
             img:"WelcomeToSlacksville_cover.jpg",
@@ -68,6 +71,7 @@ export default {
              }
         },
         {   
+            slug:"SillyDepressed",
             title:"Silly Depressed: Musings on Our Mental Illness",
             author:"Kristin Hooker",
             img:"SillyDepressed_cover.jpg",
@@ -80,6 +84,7 @@ export default {
              }
         },
         {   
+            slug:"IdiotsAndRobots",
             title:"Idiots and Robots",
             author:"Kristin Hooker",
             img:"IdiotsAndRobots_cover.jpg",
