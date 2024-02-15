@@ -6,11 +6,17 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/books/[slug]/page": [
+    "/book/[slug]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/books/[slug]/page.css",
-      "static/chunks/app/books/[slug]/page.js"
+      "static/css/app/book/[slug]/page.css",
+      "static/chunks/app/book/[slug]/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ]
   }
 }

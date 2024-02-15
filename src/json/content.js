@@ -2,7 +2,8 @@ export default {
     "metadata": {
         "title": "Strange Goose",
         "description": "An independent publisher in Portland, Oregon.",
-        "keywords": "Strange, Goose, Independent, Publisher, Portland, Oregon, K, Kristin, KP, Peach, Hooker, Author, Slacksville, funny, family"
+        "keywords": "Strange, Goose, Independent, Publisher, Portland, Oregon, K, Kristin, KP, Peach, Hooker, Author, Slacksville, funny, family",
+        "icon":"/favicon.ico"
     },
     "books": [
         {   
@@ -98,6 +99,34 @@ export default {
                  amazon: "https://www.amazon.com/Idiots-Robots-Kristin-Hooker-ebook/dp/B08RXPL35L",
                  bookshop: "https://bookshop.org/p/books/idiots-and-robots-kristin-hooker/15993248"
              }
+        }
+    ],
+    "printables": [
+        
+        {
+            "thumb": "/assets/images/printables/full/WTSCreatureGuest.jpg",
+            "url":"/assets/printables/WTSCreatureGuest.pdf",
+            "title":"Creature Party Guest"
+        },
+        {
+            "thumb": "/assets/images/printables/full/Mushlib.jpg",
+            "url":"/assets/printables/Mushlib.pdf",
+            "title":"Mushlibs"
+        },
+        {
+            "thumb": "/assets/images/printables/full/NameGame.jpg",
+            "url":"/assets/printables/NameGame.pdf",
+            "title":"Find Your Slacksville Name"
+        },
+        {
+            "thumb": "/assets/images/printables/full/SillySpookyCharacter.jpg",
+            "url":"/assets/printables/SillySpookyCharacter.pdf",
+            "title":"Silly, Spooky Creature"
+        },
+        {
+            "thumb": "/assets/images/printables/full/SlacksvillesBestSuperhero.jpg",
+            "url":"/assets/printables/SlacksvillesBestSuperhero.pdf",
+            "title":"Slacksville's Best Superhero"
         }
     ]
 }

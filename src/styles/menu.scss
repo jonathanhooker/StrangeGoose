@@ -4,30 +4,36 @@
     width: 100%;
     justify-content: center;
 
-    .inner{
+    .inner {
         display: block;
         position: relative;
         width: 100%;
         height: 100%;
         max-width: 1400px;
         margin: 0 auto;
+        text-align: right;
 
         .logoLockup {
+            position: relative;
             display: block;
             left: 1em;
             height: 100%;
             float: left;
             padding-left: 2em;
+            cursor: pointer;
+            text-align: left;
+            z-index: 3;
 
             .logo {
                 position: absolute;
                 top: 50%;
                 transform: translate(0%, -50%);
                 height: 7em;
-                width:auto;
+                width: auto;
                 margin: 0;
                 padding: 0;
             }
+
             .title {
                 position: absolute;
                 top: 50%;
@@ -37,6 +43,11 @@
                 margin: 0;
                 padding: 0;
                 line-height: 1.2em;
+                color: #000;
+
+                &hover {
+                    color: unset;
+                }
             }
 
         }
@@ -47,15 +58,151 @@
             margin: 0;
             padding: 0;
             padding-right: 2em;
+            position: relative;
             align-items: center;
             justify-content: right;
             height: 100%;
+            transform: unset;
+            // z-index: 2;
 
             li {
                 display: flex;
                 padding: 2em;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
             }
 
+
+        }
+
+        .hamburger {
+            display: none;
+            position: absolute;
+            top: 50%;
+            transform: translate(0%, -50%);
+            right: 2em;
+
+            height: 80px;
+            width: 80px;
+            // z-index: 3;
+
+            svg {
+                top:0;
+                left:0;
+                height: 80px;
+                position: absolute;
+                width: 80px;
+            }
+
+            .x {
+                transform: scale(0);
+                transition: transform 400ms;
+            }
+
+            .line {
+                fill: none;
+                stroke: black;
+                stroke-width: 6px;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                transform-origin: 50%;
+                transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+            }
+
+            .x .line {
+                stroke-width: 5.5px;
+            }
+
+            .line {
+                transform-origin: 50%;
+                transition: transform 400ms 100ms;
+            }
+
+            &.active {
+                .x {
+                    transform: scale(1);
+                    transition: transform 400ms 350ms;
+                }
+                .line {
+                    transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+                }
+                
+                .line {
+                    transition: transform 400ms;
+                }
+                .line1 {
+                    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+                }
+                .line2 {
+                    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+                }
+                .line3 {
+                    transform: translateY(0px) rotate(45deg) scale(.7);
+                }
+                .line4 {
+                    transform: translateY(0px) rotate(-45deg) scale(.7);
+                }
+                .line5 {
+                    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+                }
+                .line6 {
+                    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+                }
+                .x {
+                    transition: transform 400ms 100ms;
+                    transform: scale(1);
+                }
+            }
+
+
+
+        }
+
+
+        // can adjust this size later, but I want the whole thing to locate off screen unless open
+        @media (max-width: 52em) {
+
+            .logoLockup {
+                z-index: 1;
+            }
+
+            .hamburger {
+                display: block;
+                z-index: 3;
+            }
+
+            .sections {
+                // display: none;
+                flex-direction: column;
+                justify-content: center;
+                background: white;
+                position: absolute;
+                top:0;
+                left:0;
+                width:100vw;
+                padding: 0;
+                padding-top: 2em;
+                height: unset;
+                transform: translateY(-100%);
+                transition: transform 500ms;
+                z-index: 2;
+
+                li {
+                    padding: 2em;
+                    a {
+                        font-size: 2em;
+                    }
+                }
+
+                &.active {
+                    transform: translateY(0%);
+                }
+
+
+            }
         }
 
     }
