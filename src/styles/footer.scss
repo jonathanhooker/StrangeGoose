@@ -1,3 +1,5 @@
+@import "./variables";
+
 .footer {
   width: 100%;
   height: 100px;
@@ -5,11 +7,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333333;
+  background-color: $bgGrey;
   color: #eaeaea;
-}
+  position: relative;
+  // z-index: 2;
 
-.logo {
-  height: 1em;
-  margin: 5px;
+  .logo {
+    height: 1em;
+    margin: 5px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $bgGrey;
+    z-index: -1;
+  }
 }

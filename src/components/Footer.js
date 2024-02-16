@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className="footer">
-      &copy; STRANGE GOOSE
+        &copy; STRANGE GOOSE
       </footer>
     </>
   )

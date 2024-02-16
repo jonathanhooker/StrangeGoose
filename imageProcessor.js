@@ -32,3 +32,8 @@ processFolder("public/assets/images/covers/full", [
     { outputFolderPath: "public/assets/images/covers/small", width:500, height:500, fit:"scaleToFit"}
 ])
 
+processFolder("public/assets/images/printables/full", [
+    // { outputFolderPath: "public/assets/images/covers/medium", width:1000, height:1000, fit:"scaleToFit"},
+    { outputFolderPath: "public/assets/images/printables/small", width:500, height:500, fit:"scaleToFit"}
+])
+

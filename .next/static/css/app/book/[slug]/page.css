@@ -1,0 +1,234 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/styles/menu.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.menu {
+  display: block;
+  height: 10em;
+  width: 100%;
+  justify-content: center;
+}
+.menu .inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: right;
+}
+.menu .inner .logoLockup {
+  position: relative;
+  display: block;
+  left: 1em;
+  height: 100%;
+  float: left;
+  padding-left: 2em;
+  cursor: pointer;
+  text-align: left;
+  z-index: 3;
+}
+.menu .inner .logoLockup .logo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  height: 7em;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+.menu .inner .logoLockup .title {
+  position: absolute;
+  top: 50%;
+  left: 5.5em;
+  font-size: 2em;
+  transform: translate(0%, -50%);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+  color: #000;
+}
+.menu .inner .logoLockup .titlehover {
+  color: unset;
+}
+.menu .inner .sections {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-right: 2em;
+  position: relative;
+  align-items: center;
+  justify-content: right;
+  height: 100%;
+  transform: unset;
+}
+.menu .inner .sections li {
+  display: flex;
+  padding: 2em;
+}
+.menu .inner .sections li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu .inner .hamburger {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  right: 2em;
+  height: 80px;
+  width: 80px;
+}
+.menu .inner .hamburger svg {
+  top: 0;
+  left: 0;
+  height: 80px;
+  position: absolute;
+  width: 80px;
+}
+.menu .inner .hamburger .x {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.menu .inner .hamburger .line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.menu .inner .hamburger .x .line {
+  stroke-width: 5.5px;
+}
+.menu .inner .hamburger .line {
+  transform-origin: 50%;
+  transition: transform 400ms 100ms;
+}
+.menu .inner .hamburger.active .x {
+  transform: scale(1);
+  transition: transform 400ms 350ms;
+}
+.menu .inner .hamburger.active .line {
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms;
+}
+.menu .inner .hamburger.active .line {
+  transition: transform 400ms;
+}
+.menu .inner .hamburger.active .line1 {
+  transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(0.7);
+}
+.menu .inner .hamburger.active .line2 {
+  transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(0.7);
+}
+.menu .inner .hamburger.active .line3 {
+  transform: translateY(0px) rotate(45deg) scale(0.7);
+}
+.menu .inner .hamburger.active .line4 {
+  transform: translateY(0px) rotate(-45deg) scale(0.7);
+}
+.menu .inner .hamburger.active .line5 {
+  transform: translateX(18px) translateY(3px) rotate(45deg) scale(0.7);
+}
+.menu .inner .hamburger.active .line6 {
+  transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(0.7);
+}
+.menu .inner .hamburger.active .x {
+  transition: transform 400ms 100ms;
+  transform: scale(1);
+}
+@media (max-width: 52em) {
+  .menu .inner .logoLockup {
+    z-index: 1;
+  }
+  .menu .inner .hamburger {
+    display: block;
+    z-index: 3;
+  }
+  .menu .inner .sections {
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0;
+    padding-top: 2em;
+    height: unset;
+    transform: translateY(-100%);
+    transition: transform 500ms;
+    z-index: 2;
+  }
+  .menu .inner .sections li {
+    padding: 2em;
+  }
+  .menu .inner .sections li a {
+    font-size: 2em;
+  }
+  .menu .inner .sections.active {
+    transform: translateY(0%);
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/styles/header.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.header .logo {
+  display: block;
+  height: 20em;
+  margin: 0 auto 1em auto;
+}
+.header .title {
+  font-size: 2em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[12].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[12].oneOf[13].use[5]!./src/styles/book.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.book {
+  max-width: 1000px;
+  padding: 1em 1em 2em 1em;
+}
+.book .leftColumn {
+  float: left;
+  width: 39%;
+}
+.book .leftColumn .coverImg {
+  width: 100%;
+}
+.book .rightColumn {
+  float: right;
+  width: 61%;
+  padding-left: 2em;
+}
+.book .rightColumn .title {
+  font-weight: bold;
+  font-size: 2em;
+}
+.book .rightColumn .author {
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+.book .rightColumn .description {
+  margin-bottom: 1.5em;
+}
+.book .rightColumn .storeLink {
+  display: inline-block;
+  background-color: black;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.5em 0.5em 0em;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .book .rightColumn .storeLink:hover {
+    background-color: blue;
+  }
+}
