@@ -17,6 +17,7 @@
   text-align: right;
 }
 .menu .inner .logoLockup {
+  font-size: min(1em, 2.5vw);
   position: relative;
   display: block;
   left: 1em;
@@ -198,10 +199,12 @@
 }
 .itemList ul {
   list-style: none;
+  padding: 0;
 }
 .itemList ul li {
   display: inline-block;
   width: 24em;
+  max-width: 100%;
   min-height: 20em;
   margin-bottom: 2.5em;
   position: relative;
