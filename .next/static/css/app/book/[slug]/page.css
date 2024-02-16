@@ -17,6 +17,7 @@
   text-align: right;
 }
 .menu .inner .logoLockup {
+  font-size: min(1em, 2.5vw);
   position: relative;
   display: block;
   left: 1em;
@@ -230,5 +231,22 @@
 @media (hover: hover) {
   .book .rightColumn .storeLink:hover {
     background-color: blue;
+  }
+}
+@media (max-width: 500px) {
+  .book .leftColumn {
+    float: unset;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .book .leftColumn .coverImg {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  .book .rightColumn {
+    float: unset;
+    width: 100%;
+    padding-left: 0;
   }
 }

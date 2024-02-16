@@ -44,4 +44,23 @@
             }
         }
     }
+
+    @media (max-width: 500px) {
+        .leftColumn {
+            float: unset;            
+            width: 100%;
+            .coverImg {
+                width: 50%;
+                margin: 0 auto;
+                display: block;
+            }
+            margin-bottom: 1em;
+        }
+        .rightColumn {
+            float: unset;            
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
 }
