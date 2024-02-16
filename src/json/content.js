@@ -105,27 +105,27 @@ export default {
         
         {
             "thumb": "/assets/images/printables/full/WTSCreatureGuest.jpg",
-            "url":"/assets/printables/WTSCreatureGuest.pdf",
+            "url":"/media/printables/WTSCreatureGuest.pdf",
             "title":"Creature Party Guest"
         },
         {
             "thumb": "/assets/images/printables/full/Mushlib.jpg",
-            "url":"/assets/printables/Mushlib.pdf",
+            "url":"/media/printables/Mushlib.pdf",
             "title":"Mushlibs"
         },
         {
             "thumb": "/assets/images/printables/full/NameGame.jpg",
-            "url":"/assets/printables/NameGame.pdf",
+            "url":"/media/printables/NameGame.pdf",
             "title":"Find Your Slacksville Name"
         },
         {
             "thumb": "/assets/images/printables/full/SillySpookyCharacter.jpg",
-            "url":"/assets/printables/SillySpookyCharacter.pdf",
+            "url":"/media/printables/SillySpookyCharacter.pdf",
             "title":"Silly, Spooky Creature"
         },
         {
             "thumb": "/assets/images/printables/full/SlacksvillesBestSuperhero.jpg",
-            "url":"/assets/printables/SlacksvillesBestSuperhero.pdf",
+            "url":"/media/printables/SlacksvillesBestSuperhero.pdf",
             "title":"Slacksville's Best Superhero"
         }
     ]
