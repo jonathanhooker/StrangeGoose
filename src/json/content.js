@@ -2,10 +2,12 @@ export default {
     "metadata": {
         "title": "Strange Goose",
         "description": "An independent publisher in Portland, Oregon.",
-        "keywords": "Strange, Goose, Independent, Publisher, Portland, Oregon, K, Kristin, KP, Peach, Hooker, Author, Slacksville, funny, family"
+        "keywords": "Strange, Goose, Independent, Publisher, Portland, Oregon, K, Kristin, KP, Peach, Hooker, Author, Slacksville, funny, family",
+        "icon":"/favicon.ico"
     },
     "books": [
         {   
+            slug:"SlacksvillesWorstSuperHeroes",
             title:"Slacksville's Worst Superheroes",
             author:"K. Peach",
             img:"SlacksvillesWorstSuperHeroes_cover.jpg",
@@ -33,6 +35,7 @@ export default {
             }
         },
         {   
+            slug:"SlacksvillesSilliestSpookyStories",
             title:"Slacksville's Silliest Spooky Stories",
             author:"K. Peach",
             img:"SlacksvillesSilliestSpookyStories_cover.jpg",
@@ -49,6 +52,7 @@ export default {
              }
         },
         {   
+            slug:"WelcomeToSlacksville",
             title:"Welcome To Slacksville",
             author:"K. Peach",
             img:"WelcomeToSlacksville_cover.jpg",
@@ -68,6 +72,7 @@ export default {
              }
         },
         {   
+            slug:"SillyDepressed",
             title:"Silly Depressed: Musings on Our Mental Illness",
             author:"Kristin Hooker",
             img:"SillyDepressed_cover.jpg",
@@ -80,6 +85,7 @@ export default {
              }
         },
         {   
+            slug:"IdiotsAndRobots",
             title:"Idiots and Robots",
             author:"Kristin Hooker",
             img:"IdiotsAndRobots_cover.jpg",
@@ -93,6 +99,34 @@ export default {
                  amazon: "https://www.amazon.com/Idiots-Robots-Kristin-Hooker-ebook/dp/B08RXPL35L",
                  bookshop: "https://bookshop.org/p/books/idiots-and-robots-kristin-hooker/15993248"
              }
+        }
+    ],
+    "printables": [
+        
+        {
+            "thumb": "/assets/images/printables/full/WTSCreatureGuest.jpg",
+            "url":"/assets/printables/WTSCreatureGuest.pdf",
+            "title":"Creature Party Guest"
+        },
+        {
+            "thumb": "/assets/images/printables/full/Mushlib.jpg",
+            "url":"/assets/printables/Mushlib.pdf",
+            "title":"Mushlibs"
+        },
+        {
+            "thumb": "/assets/images/printables/full/NameGame.jpg",
+            "url":"/assets/printables/NameGame.pdf",
+            "title":"Find Your Slacksville Name"
+        },
+        {
+            "thumb": "/assets/images/printables/full/SillySpookyCharacter.jpg",
+            "url":"/assets/printables/SillySpookyCharacter.pdf",
+            "title":"Silly, Spooky Creature"
+        },
+        {
+            "thumb": "/assets/images/printables/full/SlacksvillesBestSuperhero.jpg",
+            "url":"/assets/printables/SlacksvillesBestSuperhero.pdf",
+            "title":"Slacksville's Best Superhero"
         }
     ]
 }

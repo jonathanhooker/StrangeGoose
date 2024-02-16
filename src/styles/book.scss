@@ -1,0 +1,66 @@
+.book {
+    max-width: 1000px;
+    padding: 1em 1em 2em 1em;
+
+    .leftColumn {
+        float: left;
+        width: 39%;
+        // max-width: ;
+
+        .coverImg {
+            width: 100%;
+        }
+    }
+    .rightColumn {
+        float: right;
+        width: 61%;
+        padding-left: 2em;
+
+        .title {
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .author {
+            margin-bottom: 1em;
+            font-size: 1.5em;
+        }
+        .description {
+            margin-bottom: 1.5em;
+        }
+        .storeLink {
+            display: inline-block;
+            background-color: black;
+            padding: 0.5em 1em;
+            margin: 0.5em 0.5em 0.5em 0em;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            
+            @media (hover: hover) {
+                &:hover {
+                    background-color: blue;
+                    // color: blue;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .leftColumn {
+            float: unset;            
+            width: 100%;
+            .coverImg {
+                width: 50%;
+                margin: 0 auto;
+                display: block;
+            }
+            margin-bottom: 1em;
+        }
+        .rightColumn {
+            float: unset;            
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+
+}
